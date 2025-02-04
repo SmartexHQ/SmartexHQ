@@ -1,0 +1,30 @@
+name: Allaccessfans
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.0"
+      - uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.x"
+      - name: Install dependencies and build Next.js app
+        run: |
+          npm install  # Install project dependencies
+          npm run build  # Build Next.js app
+    
+      - name: Deploy to server
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+            server: ${{ secrets.FTP_SERVER }} 
+            username: ${{ secrets.FTP_USERNAME }}
+            password: ${{ secrets.FTP_PASSWORD }}
