@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -16,7 +17,9 @@ const Navbar = () => {
           {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
+              <a href="#about" className="text-gray-700 hover:text-accent transition-colors">About</a>
               <a href="#services" className="text-gray-700 hover:text-accent transition-colors">Services</a>
+              <a href="#testimonials" className="text-gray-700 hover:text-accent transition-colors">Testimonials</a>
               <a href="#benefits" className="text-gray-700 hover:text-accent transition-colors">Benefits</a>
               <a href="#contact" className="text-gray-700 hover:text-accent transition-colors">Contact</a>
               <Button className="bg-accent hover:bg-accent/90">Get Started</Button>
@@ -38,7 +41,9 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-accent">About</a>
               <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-accent">Services</a>
+              <a href="#testimonials" className="block px-3 py-2 text-gray-700 hover:text-accent">Testimonials</a>
               <a href="#benefits" className="block px-3 py-2 text-gray-700 hover:text-accent">Benefits</a>
               <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-accent">Contact</a>
               <Button className="w-full mt-4 bg-accent hover:bg-accent/90">Get Started</Button>
