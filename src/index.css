@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -35,7 +34,36 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 }
 
+/* custom styles */
+
+.cardOne {
+  @apply flex relative overflow-hidden justify-between cardOne-gradient border border-[#53B1FD] p-6 rounded-[24px]  min-h-[250px] sm:min-h-[366px] w-full;
+}
+.cardFour {
+  @apply flex justify-center relative overflow-hidden cardOne-gradient border border-[#53B1FD] p-6 rounded-[24px] min-h-[250px] w-full;
+}
+.cardOne-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90.9deg, #ffffff 2.99%, #c6ddff 99.28%);
+}
+
+.cardTwo-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90.9deg, #ffffff 2.99%, #e8c6ff 99.28%);
+}
+
+.cardThree-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90.9deg, #ffffff 2.99%, #ffdec6 99.28%);
+}
+.cardFour-gradient {
+  background: linear-gradient(180.84deg, #ffffff 5.41%, #ebebeb 98.32%);
+}
+
+.app-width {
+  @apply max-w-[1440px] mx-auto;
+}
