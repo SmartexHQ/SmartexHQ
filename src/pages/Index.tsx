@@ -38,14 +38,15 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div>
       <Navbar />
-
-      <HeroSection />
-      <Partners />
-      <ValueOne />
-      <Product />
-      <Services />
+      <div className="app-width mx-auto">
+        <HeroSection />
+        <Partners />
+        <ValueOne />
+        <Product />
+        <Services />
+      </div>
       <AboutUs />
       <MeetOurTeam />
       <BuildFuture />

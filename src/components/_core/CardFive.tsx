@@ -6,7 +6,7 @@ const CardFive = ({ imageUrl }: { imageUrl: string }) => {
       <img
         src={imageUrl}
         alt="image here"
-        className="transition-transform duration-300 ease-in-out hover:scale-105 w-[300px] h-[300px] object-cover rounded-lg shadow-lg"
+        className="transition-transform duration-300 ease-in-out hover:scale-105 w-[270px] h-[270px] object-cover rounded-lg shadow-lg"
       />
     </div>
   );

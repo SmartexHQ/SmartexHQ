@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.app-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

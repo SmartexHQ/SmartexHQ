@@ -32,9 +32,16 @@ const Navbar: React.FC = () => {
     <header className="w-full bg-white border-b border-gray-200 sticky top-0 z-10">
       <div className="app-width flex items-center justify-between py-4 px-5 md:px-8 lg:px-12">
         {/* Logo */}
-        <div className="flex items-center">
-          <span className="inline-block w-3 h-3 bg-black rounded-full mr-2"></span>
-          <span className="text-lg font-semibold">Brand Logo</span>
+        <div className="flex  items-center">
+          <a href={"/"}>
+            <span>
+              <img
+                src="/png/smarttexlogo.png"
+                alt="app logo"
+                className="w-full h-12"
+              />
+            </span>
+          </a>
         </div>
 
         {/* Desktop Navigation Links */}
